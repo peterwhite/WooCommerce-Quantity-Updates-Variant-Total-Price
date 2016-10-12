@@ -1,4 +1,5 @@
 $('select').on('change blur', function() {
+	//Replace 'select' with a more specific selector, ensuring the quantity and variant fields are included 
 	var price = $('.woocommerce-Price-amount').text().replace(/[^\d.-]/g, ''); 
     //Replace .woocommerce-Price-amount with the CSS selector of the single unit price
 	var quantity = $("select.qty").val();
